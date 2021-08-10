@@ -1,0 +1,12 @@
+class Automobile: 
+  def_init_(self): 
+    self.year = 0
+    self.make=" "
+    self.model = " "
+    self.color = " "
+    self.mileage = " "
+   
+  def add_vehicle(self):
+    try: 
+      self.year = int(input("Vehicle year: "))
+      
