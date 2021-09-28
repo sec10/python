@@ -1,12 +1,16 @@
-class Automobile:
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>class Automobile:
     def __init__(self):
         self.year = 0
         self.make = " "
         self.model = " "
         self.color = " "
-        self.mileage = 0
+    self.mileage = 0</p>
         
-    def add_vehicle(self):
+    <p>def add_vehicle(self):
         try:
             self.year = int(input("Vehicle year: "))
         except ValueError:
@@ -18,24 +22,24 @@ class Automobile:
             self.mileage = int(input("Vehicle mileage (no commas): "))
             return True
         except ValueError:
-            self.mileage = int(input("Do not use comma when entering mileage:"))
+        self.mileage = int(input("Do not use comma when entering mileage:"))</p>
             
-    def __str__(self):
+    <p>def __str__(self):
         return('%d %s %s Color: %s Mileage: %d' %
               (self.year, self.make, self.model, self.color,
-               self.mileage))
+        self.mileage))</p>
        
 
-Inventory = []
+<p>Inventory = []
 
 def edit(Inventory):
     pos = int(input('Which vehicle is needs to be edited?: '))
     new_vehicle = car.add_vehicle()
     new_vehicle = car.__str__()
     Inventory[pos-1] = new_vehicle
-    print('Vehicle was updated')
+    print('Vehicle was updated')</p>
 
-user=True
+<p>user=True
 while user:
     print ("""
     Options:
@@ -72,5 +76,6 @@ while user:
         f.write('/n')
         f.close
         f=open("vehicle.txt", "r")
-        print(f.read())
-      
+    print(f.read())</p>
+</body>
+</html>
