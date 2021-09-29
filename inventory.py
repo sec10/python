@@ -1,16 +1,25 @@
-<!DOCTYPE html>
-<html>
-<body>
 
-<p>class Automobile:
+#automobile class that will be used by a dealership as a vehicle inventory program.  The following attributes should be present in your automobile class:
+#private string make
+#private string model
+#private string color
+#private int year
+#private int mileage
+#constructor
+#add a new vehicle
+#remove a vehicle
+#update vehicle attributes
+
+
+class Automobile:
     def __init__(self):
         self.year = 0
         self.make = " "
         self.model = " "
         self.color = " "
-    self.mileage = 0</p>
+    self.mileage = 0
         
-    <p>def add_vehicle(self):
+    def add_vehicle(self):
         try:
             self.year = int(input("Vehicle year: "))
         except ValueError:
@@ -22,24 +31,24 @@
             self.mileage = int(input("Vehicle mileage (no commas): "))
             return True
         except ValueError:
-        self.mileage = int(input("Do not use comma when entering mileage:"))</p>
+        self.mileage = int(input("Do not use comma when entering mileage:"))
             
-    <p>def __str__(self):
+    def __str__(self):
         return('%d %s %s Color: %s Mileage: %d' %
               (self.year, self.make, self.model, self.color,
-        self.mileage))</p>
+        self.mileage))
        
 
-<p>Inventory = []
+Inventory = []
 
 def edit(Inventory):
     pos = int(input('Which vehicle is needs to be edited?: '))
     new_vehicle = car.add_vehicle()
     new_vehicle = car.__str__()
     Inventory[pos-1] = new_vehicle
-    print('Vehicle was updated')</p>
+    print('Vehicle was updated')
 
-<p>user=True
+user=True
 while user:
     print ("""
     Options:
@@ -76,6 +85,5 @@ while user:
         f.write('/n')
         f.close
         f=open("vehicle.txt", "r")
-    print(f.read())</p>
-</body>
-</html>
+    print(f.read())
+
