@@ -1,6 +1,6 @@
-Final for my 
+Final for my Basic Programming class. The program simulates a vehicle inventory system for a dealership that allows users to add, remove, update, and view the vehicle inventory. 
 
-Create an automobile class that will be used by a dealership as a vehicle inventory program.  The following attributes should be present in your automobile class:
+These are the requirements - Create an automobile class that will be used by a dealership as a vehicle inventory program.  The following attributes should be present in your automobile class:
 #private string make
 #private string model
 #private string color
